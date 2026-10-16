@@ -1,0 +1,71 @@
+// SCSS source for icon demo (assets/_icons.scss)
+// Use this file to customize sizes, colors and layout. The HTML demo includes a compiled CSS for quick preview.
+
+$icon-size: 72px;
+$gap: 18px;
+$card-bg: #fff;
+$muted: #777;
+
+.page {
+  max-width: 980px;
+  margin: 36px auto;
+  padding: 24px;
+}
+
+.icons-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $gap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #f0f0f0;
+  background: $card-bg;
+}
+
+.icon-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  width: 120px;
+}
+
+.icon {
+  width: $icon-size;
+  height: $icon-size;
+  display: block;
+}
+
+.icon--simple {
+  filter: drop-shadow(0 6px 10px rgba(34,34,34,0.06));
+}
+
+.icon--grad {
+  transform: translateY(2px);
+}
+
+.meta {
+  flex: 1;
+}
+
+.name { font-weight: 700; font-size: 16px; }
+.letters { color: $muted; font-size: 13px; margin-top: 2px; }
+
+@media (max-width: 720px) {
+  .icons-grid { grid-template-columns: repeat(2, 1fr); }
+  $icon-size: 60px;
+}
+
+@media (max-width: 420px) {
+  .icons-grid { grid-template-columns: 1fr; }
+  .icon-wrap { width: 88px; }
+}
