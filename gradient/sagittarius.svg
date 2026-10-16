@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-hidden="true">
+  <defs>
+    <linearGradient id="g-sagittarius" x2="1" y2="1">
+      <stop offset="0" stop-color="#d9c5ff"/>
+      <stop offset="0.5" stop-color="#9270df"/>
+      <stop offset="1" stop-color="#49328c"/>
+    </linearGradient>
+  </defs>
+  <path d="M23 77L77 23M45 23H77V55" fill="none" stroke="url(#g-sagittarius)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

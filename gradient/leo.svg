@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-hidden="true">
+  <defs>
+    <linearGradient id="g-leo" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff0a0"/>
+      <stop offset="0.5" stop-color="#f5a623"/>
+      <stop offset="1" stop-color="#a84a16"/>
+    </linearGradient>
+  </defs>
+  <path d="M48 48C25 22 13 43 26 57C37 68 56 53 48 38C40 22 61 13 72 28C85 45 66 58 68 72C69 83 83 85 87 73" fill="none" stroke="url(#g-leo)" stroke-width="9" stroke-linecap="round"/>
+</svg>

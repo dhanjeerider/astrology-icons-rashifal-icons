@@ -3,462 +3,145 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>राशि आइकॉन्स — Simple & Gradient SVG icons demo</title>
-  <meta name="description" content="राशिफल के लिए 12 राशियों के सरल और ग्रेडिएंट SVG आइकन — एक साथ दिखाने का डेमो पेज।" />
+  <title>राशि आइकॉन्स — Clean & Gradient SVG icons portfolio</title>
+  <meta name="description" content="राशि (12 signs) के लिए साफ़ (clean) और ग्रेडिएंट (gradient) SVG आइकन — portfolio view।" />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://github.com/dhanjeerider/astrology-icons-rashifal-icons/blob/main/index.html" />
   <style>
-    /* Compiled demo CSS (source in assets/_icons.scss) */
-    :root{--bg:#fff;--muted:#777;--gap:18px;--icon-size:72px}
+    :root{--bg:#fff;--muted:#777;--gap:18px;--icon-size:84px}
     html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:var(--bg);color:#222}
     .page{max-width:980px;margin:36px auto;padding:24px}
     h1{font-size:22px;margin:0 0 8px}
     p.lead{margin:0 0 18px;color:var(--muted)}
     .icons-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--gap);list-style:none;padding:0;margin:0}
     .card{display:flex;align-items:center;gap:14px;padding:12px;border-radius:12px;border:1px solid #f0f0f0;background:#fff}
-    .icon-wrap{display:flex;flex-direction:column;align-items:center;gap:6px;width:120px}
+    .icon-wrap{display:flex;flex-direction:column;align-items:center;gap:8px;width:120px}
     .icon{width:var(--icon-size);height:var(--icon-size);display:block}
-    .icon--simple{filter:drop-shadow(0 6px 10px rgba(34,34,34,0.06))}
-    .icon--grad{transform:translateY(2px)}
     .meta{flex:1}
     .name{font-weight:700;font-size:16px}
     .letters{color:var(--muted);font-size:13px;margin-top:2px}
-    @media (max-width:720px){.icons-grid{grid-template-columns:repeat(2,1fr)};:root{--icon-size:60px}}
+    @media (max-width:720px){.icons-grid{grid-template-columns:repeat(2,1fr)};:root{--icon-size:68px}}
     @media (max-width:420px){.icons-grid{grid-template-columns:1fr}.icon-wrap{width:88px}}
   </style>
 </head>
 <body>
-  <!-- SVG sprite: simple icons (kept from provided) + gradient icons converted to symbols -->
-  <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
-
-  <!-- SIMPLE SYMBOLS (from your first block) -->
-
-  <symbol id="rashi-mesh" viewBox="0 0 100 100">
-    <circle cx="50" cy="50" r="49" fill="#d7352d"/>
-    <g fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M43 39C34 32 33 17 22 18C9 19 14 38 28 42"/>
-      <path d="M57 39C66 32 67 17 78 18C91 19 86 38 72 42"/>
-      <path d="M29 44C29 33 39 29 50 29S71 33 71 44L67 68Q50 83 33 68Z"/>
-      <path d="M37 47L44 51M63 47L56 51"/>
-      <path d="M44 60Q50 65 56 60"/>
-      <path d="M41 69L37 78M59 69L63 78"/>
-    </g>
-    <circle cx="42" cy="54" r="2.5" fill="#fff"/>
-    <circle cx="58" cy="54" r="2.5" fill="#fff"/>
-  </symbol>
-
-  <symbol id="rashi-vrish" viewBox="0 0 100 100">
-    <circle cx="50" cy="50" r="49" fill="#873b91"/>
-    <g fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M36 39C22 39 15 25 20 16C26 20 31 24 34 29"/>
-      <path d="M64 39C78 39 85 25 80 16C74 20 69 24 66 29"/>
-      <path d="M34 36L25 34L19 42L30 49"/>
-      <path d="M66 36L75 34L81 42L70 49"/>
-      <path d="M34 39Q50 25 66 39L65 65Q62 78 50 81Q38 78 35 65Z"/>
-      <path d="M38 50L45 54M62 50L55 54"/>
-      <path d="M45 66Q50 70 55 66"/>
-      <path d="M40 73L38 79M60 73L62 79"/>
-    </g>
-    <path d="M40 61Q50 72 60 61Q57 79 50 79Q43 79 40 61" fill="#fff"/>
-  </symbol>
-
-  <symbol id="rashi-mithun" viewBox="0 0 100 100">
-    <circle cx="50" cy="50" r="49" fill="#ed951d"/>
-    <g fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
-      <circle cx="35" cy="29" r="9"/>
-      <circle cx="65" cy="29" r="9"/>
-      <path d="M21 74L24 55Q25 42 35 42Q45 42 46 55L47 74Z"/>
-      <path d="M53 74L54 55Q55 42 65 42Q75 42 76 55L79 74Z"/>
-      <path d="M35 45L50 58L65 45"/>
-      <path d="M35 60L50 74L65 60"/>
-      <path d="M30 80L70 80"/>
-    </g>
-    <path d="M35 48L50 63L65 48L60 76H40Z" fill="#fff" opacity=".9"/>
-  </symbol>
-
-  <symbol id="rashi-kark" viewBox="0 0 100 100">
-    <circle cx="50" cy="50" r="49" fill="#6446a5"/>
-    <g fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M31 43Q17 36 17 25Q17 17 27 20L38 35"/>
-      <path d="M69 43Q83 36 83 25Q83 17 73 20L62 35"/>
-      <path d="M27 37L20 30M73 37L80 30"/>
-      <path d="M27 51Q50 35 73 51L67 70Q50 83 33 70Z"/>
-      <path d="M32 69L23 78L19 86M42 75L37 85M58 75L63 85M68 69L77 78L81 86"/>
-      <path d="M39 43L36 33M61 43L64 33"/>
-    </g>
-    <circle cx="39" cy="50" r="3" fill="#fff"/>
-    <circle cx="61" cy="50" r="3" fill="#fff"/>
-  </symbol>
-
-  <symbol id="rashi-singh" viewBox="0 0 100 100">
-    <circle cx="50" cy="50" r="49" fill="#e34b2e"/>
-    <path d="M50 10L57 21L70 13L72 27L87 29L79 42L91 52L78 61L84 75L68 76L62 90L50 80L38 90L32 76L16 75L22 61L9 52L21 42L13 29L28 27L30 13L43 21Z" fill="#fff"/>
-    <path d="M50 28Q70 28 72 49L67 68Q50 85 33 68L28 49Q30 28 50 28Z" fill="#e34b2e"/>
-    <g fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M36 47L44 51M64 47L56 51"/>
-      <path d="M43 63Q50 69 57 63"/>
-      <path d="M50 35L50 54"/>
-      <path d="M41 74L50 78L59 74"/>
-    </g>
-    <circle cx="41" cy="54" r="2.5" fill="#fff"/>
-    <circle cx="59" cy="54" r="2.5" fill="#fff"/>
-  </symbol>
-
-  <symbol id="rashi-kanya" viewBox="0 0 100 100">
-    <circle cx="50" cy="50" r="49" fill="#48253e"/>
-    <g fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M39 25Q50 15 61 25Q68 34 62 46L60 58Q57 68 47 68Q37 68 35 57L34 40Q33 30 39 25Z"/>
-      <path d="M35 43Q20 29 29 18Q35 30 40 31"/>
-      <path d="M62 35Q77 28 72 17Q64 19 61 28"/>
-      <path d="M37 54Q24 63 29 80"/>
-      <path d="M60 55Q72 64 70 82"/>
-      <path d="M44 47L48 49M57 47L53 49"/>
-      <path d="M48 58Q51 61 54 58"/>
-      <path d="M49 68L46 80L58 83"/>
-      <path d="M69 80Q82 65 83 48"/>
-    </g>
-    <path d="M81 49Q72 42 73 31M81 49L88 37M81 49L91 47" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/>
-    <path d="M79 35L74 30L70 37M87 41L93 37L92 45" stroke="#fff" stroke-width="2.5" fill="none"/>
-  </symbol>
-
-  <symbol id="rashi-tula" viewBox="0 0 100 100">
-    <circle cx="50" cy="50" r="49" fill="#13a9c3"/>
-    <g fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M50 18V80M34 80H66M42 88H58"/>
-      <path d="M20 34H80"/>
-      <path d="M50 19L45 27H55Z"/>
-      <path d="M24 34L14 59H34Z"/>
-      <path d="M76 34L66 59H86Z"/>
-      <path d="M14 59Q24 71 34 59"/>
-      <path d="M66 59Q76 71 86 59"/>
-      <path d="M24 34L14 59M24 34L34 59"/>
-      <path d="M76 34L66 59M76 34L86 59"/>
-    </g>
-  </symbol>
-
-  <symbol id="rashi-vrishchik" viewBox="0 0 100 100">
-    <circle cx="50" cy="50" r="49" fill="#c52a82"/>
-    <g fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M28 39Q38 31 50 40Q62 31 72 39L70 61Q50 78 30 61Z"/>
-      <path d="M33 43L24 34L17 38L22 49L31 49"/>
-      <path d="M67 43L76 34L83 38L78 49L69 49"/>
-      <path d="M35 62L25 72L21 79M43 68L38 80M57 68L62 80M65 62L75 72L79 79"/>
-      <path d="M70 40Q86 29 84 18Q81 9 91 11"/>
-      <path d="M91 11L84 14L88 21"/>
-      <path d="M25 45L15 45L10 53M75 45L85 45L90 53"/>
-    </g>
-    <circle cx="42" cy="48" r="2.5" fill="#fff"/>
-    <circle cx="58" cy="48" r="2.5" fill="#fff"/>
-  </symbol>
-
-  <symbol id="rashi-dhanu" viewBox="0 0 100 100">
-    <circle cx="50" cy="50" r="49" fill="#d9aa13"/>
-    <g fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
-      <circle cx="39" cy="27" r="8"/>
-      <path d="M35 36L48 48L61 40"/>
-      <path d="M45 46L34 62L22 69"/>
-      <path d="M48 48L63 57L75 51"/>
-      <path d="M34 62L43 69L57 67L67 79"/>
-      <path d="M43 69L40 84M67 79L76 85"/>
-      <path d="M66 21Q92 48 66 75"/>
-      <path d="M22 20L87 76"/>
-      <path d="M78 19L87 76L97 66"/>
-      <path d="M82 29L73 38"/>
-    </g>
-  </symbol>
-
-  <symbol id="rashi-makar" viewBox="0 0 100 100">
-    <circle cx="50" cy="50" r="49" fill="#159ca9"/>
-    <g fill="none" stroke="#fff" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M35 42Q20 34 22 20Q34 24 38 34"/>
-      <path d="M57 42Q72 34 76 20Q86 35 65 46"/>
-      <path d="M32 39Q43 28 59 39L63 59Q50 74 34 59Z"/>
-      <path d="M37 47L45 51M57 47L51 51"/>
-      <path d="M45 61Q51 66 57 61"/>
-      <path d="M45 68Q28 77 34 87Q43 96 58 85Q71 75 79 84"/>
-      <path d="M63 79Q78 67 88 79Q78 91 63 88"/>
-      <path d="M77 78L87 68L90 80"/>
-    </g>
-    <circle cx="42" cy="53" r="2.5" fill="#fff"/>
-    <circle cx="57" cy="53" r="2.5" fill="#fff"/>
-  </symbol>
-
-  <symbol id="rashi-kumbh" viewBox="0 0 100 100">
-    <circle cx="50" cy="50" r="49" fill="#286db9"/>
-    <g fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M31 23Q49 17 68 25L65 38L72 46L61 68Q50 78 39 68L28 46L35 38Z"/>
-      <path d="M34 29L65 29M37 69L63 69"/>
-      <path d="M34 75Q43 67 50 75Q57 83 66 75"/>
-      <path d="M22 82Q33 74 43 82Q53 90 65 82Q74 76 83 82"/>
-      <path d="M19 92Q30 84 42 92Q55 99 67 91Q77 85 88 91"/>
-      <path d="M35 25L31 14L42 17M65 25L69 14L58 17"/>
-    </g>
-    <path d="M42 39Q50 44 58 39" stroke="#fff" stroke-width="3" fill="none"/>
-  </symbol>
-
-  <symbol id="rashi-meen" viewBox="0 0 100 100">
-    <circle cx="50" cy="50" r="49" fill="#d5a21a"/>
-    <g fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M21 33Q38 16 58 33L72 50L58 67Q38 84 21 67Q10 50 21 33Z"/>
-      <path d="M79 33Q62 16 42 33L28 50L42 67Q62 84 79 67Q90 50 79 33Z"/>
-      <path d="M21 33L12 19L12 43ZM21 67L12 81L12 57Z"/>
-      <path d="M79 33L88 19L88 43ZM79 67L88 81L88 57Z"/>
-      <path d="M35 42Q43 50 35 58M65 42Q57 50 65 58"/>
-      <path d="M42 50H58"/>
-    </g>
-    <circle cx="28" cy="42" r="2.5" fill="#fff"/>
-    <circle cx="72" cy="42" r="2.5" fill="#fff"/>
-  </symbol>
-
-  <!-- GRADIENT SYMBOLS (converted from provided gradient snippets) -->
-
-  <symbol id="grad-aries" viewBox="0 0 100 100">
-    <defs>
-      <linearGradient id="g-aries" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0" stop-color="#ffdf85"/>
-        <stop offset="0.5" stop-color="#ed8730"/>
-        <stop offset="1" stop-color="#8b321d"/>
-      </linearGradient>
-    </defs>
-    <path d="M50 78V42M50 50C42 17 12 12 13 40C14 53 28 55 35 43M50 50C58 17 88 12 87 40C86 53 72 55 65 43" fill="none" stroke="url(#g-aries)" stroke-width="9" stroke-linecap="round"/>
-    <path d="M50 78V42" stroke="#fff0bd" stroke-width="2" opacity=".6"/>
-  </symbol>
-
-  <symbol id="grad-taurus" viewBox="0 0 100 100">
-    <defs>
-      <linearGradient id="g-taurus" x2="1" y2="1">
-        <stop offset="0" stop-color="#d9f5a0"/>
-        <stop offset="0.5" stop-color="#69a64a"/>
-        <stop offset="1" stop-color="#285b39"/>
-      </linearGradient>
-    </defs>
-    <circle cx="50" cy="55" r="25" fill="none" stroke="url(#g-taurus)" stroke-width="9"/>
-    <path d="M31 37C16 25 17 13 26 13C36 13 40 25 41 34M69 37C84 25 83 13 74 13C64 13 60 25 59 34" fill="none" stroke="url(#g-taurus)" stroke-width="8" stroke-linecap="round"/>
-  </symbol>
-
-  <symbol id="grad-gemini" viewBox="0 0 100 100">
-    <defs>
-      <linearGradient id="g-gemini" x2="1" y2="1">
-        <stop offset="0" stop-color="#b9eaff"/>
-        <stop offset="0.5" stop-color="#438bd0"/>
-        <stop offset="1" stop-color="#263d88"/>
-      </linearGradient>
-    </defs>
-    <path d="M23 17Q50 29 77 17M23 83Q50 71 77 83M35 23V77M65 23V77" fill="none" stroke="url(#g-gemini)" stroke-width="9" stroke-linecap="round"/>
-  </symbol>
-
-  <symbol id="grad-cancer" viewBox="0 0 100 100">
-    <defs>
-      <linearGradient id="g-cancer" x2="1" y2="1">
-        <stop offset="0" stop-color="#d9f5ff"/>
-        <stop offset="0.5" stop-color="#6bb6df"/>
-        <stop offset="1" stop-color="#315d9c"/>
-      </linearGradient>
-    </defs>
-    <path d="M25 37C25 21 43 17 55 23C67 29 65 43 53 47C42 51 29 44 25 37ZM75 63C75 79 57 83 45 77C33 71 35 57 47 53C58 49 71 56 75 63Z" fill="none" stroke="url(#g-cancer)" stroke-width="9"/>
-    <circle cx="25" cy="37" r="5" fill="#bceaff"/><circle cx="75" cy="63" r="5" fill="#bceaff"/>
-  </symbol>
-
-  <symbol id="grad-leo" viewBox="0 0 100 100">
-    <defs>
-      <linearGradient id="g-leo" x2="1" y2="1">
-        <stop offset="0" stop-color="#fff0a0"/>
-        <stop offset="0.5" stop-color="#f5a623"/>
-        <stop offset="1" stop-color="#a84a16"/>
-      </linearGradient>
-    </defs>
-    <path d="M48 48C25 22 13 43 26 57C37 68 56 53 48 38C40 22 61 13 72 28C85 45 66 58 68 72C69 83 83 85 87 73" fill="none" stroke="url(#g-leo)" stroke-width="9" stroke-linecap="round"/>
-  </symbol>
-
-  <symbol id="grad-virgo" viewBox="0 0 100 100">
-    <defs>
-      <linearGradient id="g-virgo" x2="1" y2="1">
-        <stop offset="0" stop-color="#f4c5ff"/>
-        <stop offset="0.5" stop-color="#b16bd1"/>
-        <stop offset="1" stop-color="#63347e"/>
-      </linearGradient>
-    </defs>
-    <path d="M18 24V76M18 24C18 45 38 45 38 24V76M38 24C38 45 58 45 58 24V76M58 24C58 45 78 45 78 24V59C78 75 67 83 56 76" fill="none" stroke="url(#g-virgo)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-  </symbol>
-
-  <symbol id="grad-libra" viewBox="0 0 100 100">
-    <defs>
-      <linearGradient id="g-libra" x2="1" y2="1">
-        <stop offset="0" stop-color="#ffe6a3"/>
-        <stop offset="0.5" stop-color="#d6a34c"/>
-        <stop offset="1" stop-color="#81522a"/>
-      </linearGradient>
-    </defs>
-    <path d="M50 17C34 17 25 28 25 41H75C75 28 66 17 50 17ZM17 59H83M17 76H83" fill="none" stroke="url(#g-libra)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
-  </symbol>
-
-  <symbol id="grad-scorpio" viewBox="0 0 100 100">
-    <defs>
-      <linearGradient id="g-scorpio" x2="1" y2="1">
-        <stop offset="0" stop-color="#ffaaa0"/>
-        <stop offset="0.5" stop-color="#d44b42"/>
-        <stop offset="1" stop-color="#70202d"/>
-      </linearGradient>
-    </defs>
-    <path d="M15 25V75M15 25C15 46 35 46 35 25V75M35 25C35 46 55 46 55 25V75M55 25C55 46 75 46 75 25V75L89 61M89 61L88 77M89 61L73 62" fill="none" stroke="url(#g-scorpio)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-  </symbol>
-
-  <symbol id="grad-sagittarius" viewBox="0 0 100 100">
-    <defs>
-      <linearGradient id="g-sagittarius" x2="1" y2="1">
-        <stop offset="0" stop-color="#d9c5ff"/>
-        <stop offset="0.5" stop-color="#9270df"/>
-        <stop offset="1" stop-color="#49328c"/>
-      </linearGradient>
-    </defs>
-    <path d="M23 77L77 23M45 23H77V55" fill="none" stroke="url(#g-sagittarius)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-  </symbol>
-
-  <symbol id="grad-capricorn" viewBox="0 0 100 100">
-    <defs>
-      <linearGradient id="g-capricorn" x2="1" y2="1">
-        <stop offset="0" stop-color="#d8d8e8"/>
-        <stop offset="0.5" stop-color="#898ba9"/>
-        <stop offset="1" stop-color="#45465f"/>
-      </linearGradient>
-    </defs>
-    <path d="M15 25L32 75L49 25L66 75C74 89 91 80 85 67C81 57 67 61 66 75" fill="none" stroke="url(#g-capricorn)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
-  </symbol>
-
-  <symbol id="grad-aquarius" viewBox="0 0 100 100">
-    <defs>
-      <linearGradient id="g-aquarius" x2="1" y2="1">
-        <stop offset="0" stop-color="#a9f5ff"/>
-        <stop offset="0.5" stop-color="#36a8d6"/>
-        <stop offset="1" stop-color="#245c9b"/>
-      </linearGradient>
-    </defs>
-    <path d="M13 38L29 27L45 38L61 27L77 38L87 31M13 66L29 55L45 66L61 55L77 66L87 59" fill="none" stroke="url(#g-aquarius)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
-  </symbol>
-
-  <symbol id="grad-pisces" viewBox="0 0 100 100">
-    <defs>
-      <linearGradient id="g-pisces" x2="1" y2="1">
-        <stop offset="0" stop-color="#c6d9ff"/>
-        <stop offset="0.5" stop-color="#6688d9"/>
-        <stop offset="1" stop-color="#35447f"/>
-      </linearGradient>
-    </defs>
-    <path d="M50 15C28 31 28 69 50 85M50 15C72 31 72 69 50 85M20 50H80" fill="none" stroke="url(#g-pisces)" stroke-width="9" stroke-linecap="round"/>
-  </symbol>
-
-  </svg>
-
   <main class="page">
-    <h1>चंद्र राशि के अनुसार अपनी राशि चुनिए — Simple & Gradient icons</h1>
-    <p class="lead">नीचे प्रत्येक राशि के लिए दो प्रकार के SVG आइकन दिए गए हैं: Simple (filled circle) और Gradient (stroke with gradient). यह पेज SEO के लिए meta tags और हिंदी सामग्री के साथ बनाया गया है।</p>
+    <h1>राशि आइकॉन्स — Clean & Gradient SVG portfolio</h1>
+    <p class="lead">हर राशि के लिए दो फ़ाइलें बनाई गई हैं: clean/<em>*.svg</em> (simple filled symbol) और gradient/<em>*.svg</em> (stroke-based gradient)। क्लिक करने पर SVG फाइल अलग टैब में खुलेगी — यह portfolio view है।</p>
 
     <ul class="icons-grid" role="list">
 
-      <!-- Each list item: simple + gradient -->
+      <!-- Aries / मेष -->
       <li class="card">
         <div class="icon-wrap">
-          <svg class="icon icon--simple" viewBox="0 0 100 100" aria-hidden="true"><use href="#rashi-mesh"/></svg>
-          <svg class="icon icon--grad" viewBox="0 0 100 100" aria-hidden="true"><use href="#grad-aries"/></svg>
+          <a href="clean/aries.svg" target="_blank" aria-label="मेष clean"><img class="icon" src="clean/aries.svg" alt="मेष (clean)"></a>
+          <a href="gradient/aries.svg" target="_blank" aria-label="मेष gradient"><img class="icon" src="gradient/aries.svg" alt="मेष (gradient)"></a>
         </div>
-        <div class="meta">
-          <div class="name">मेष</div>
-          <div class="letters">(अ, ल, इ)</div>
-        </div>
+        <div class="meta"><div class="name">मेष</div><div class="letters">(अ, ल, इ)</div></div>
       </li>
 
+      <!-- Taurus / वृष -->
       <li class="card">
         <div class="icon-wrap">
-          <svg class="icon icon--simple" viewBox="0 0 100 100" aria-hidden="true"><use href="#rashi-vrish"/></svg>
-          <svg class="icon icon--grad" viewBox="0 0 100 100" aria-hidden="true"><use href="#grad-taurus"/></svg>
+          <a href="clean/taurus.svg" target="_blank" aria-label="वृष clean"><img class="icon" src="clean/taurus.svg" alt="वृष (clean)"></a>
+          <a href="gradient/taurus.svg" target="_blank" aria-label="वृष gradient"><img class="icon" src="gradient/taurus.svg" alt="वृष (gradient)"></a>
         </div>
         <div class="meta"><div class="name">वृष</div><div class="letters">(ब, व, उ, ए)</div></div>
       </li>
 
+      <!-- Gemini / मिथुन -->
       <li class="card">
         <div class="icon-wrap">
-          <svg class="icon icon--simple" viewBox="0 0 100 100" aria-hidden="true"><use href="#rashi-mithun"/></svg>
-          <svg class="icon icon--grad" viewBox="0 0 100 100" aria-hidden="true"><use href="#grad-gemini"/></svg>
+          <a href="clean/gemini.svg" target="_blank" aria-label="मिथुन clean"><img class="icon" src="clean/gemini.svg" alt="मिथुन (clean)"></a>
+          <a href="gradient/gemini.svg" target="_blank" aria-label="मिथुन gradient"><img class="icon" src="gradient/gemini.svg" alt="मिथुन (gradient)"></a>
         </div>
         <div class="meta"><div class="name">मिथुन</div><div class="letters">(क, छ, घ, ह)</div></div>
       </li>
 
+      <!-- Cancer / कर्क -->
       <li class="card">
         <div class="icon-wrap">
-          <svg class="icon icon--simple" viewBox="0 0 100 100" aria-hidden="true"><use href="#rashi-kark"/></svg>
-          <svg class="icon icon--grad" viewBox="0 0 100 100" aria-hidden="true"><use href="#grad-cancer"/></svg>
+          <a href="clean/cancer.svg" target="_blank" aria-label="कर्क clean"><img class="icon" src="clean/cancer.svg" alt="कर्क (clean)"></a>
+          <a href="gradient/cancer.svg" target="_blank" aria-label="कर्क gradient"><img class="icon" src="gradient/cancer.svg" alt="कर्क (gradient)"></a>
         </div>
         <div class="meta"><div class="name">कर्क</div><div class="letters">(ड, हे)</div></div>
       </li>
 
+      <!-- Leo / सिंह -->
       <li class="card">
         <div class="icon-wrap">
-          <svg class="icon icon--simple" viewBox="0 0 100 100" aria-hidden="true"><use href="#rashi-singh"/></svg>
-          <svg class="icon icon--grad" viewBox="0 0 100 100" aria-hidden="true"><use href="#grad-leo"/></svg>
+          <a href="clean/leo.svg" target="_blank" aria-label="सिंह clean"><img class="icon" src="clean/leo.svg" alt="सिंह (clean)"></a>
+          <a href="gradient/leo.svg" target="_blank" aria-label="सिंह gradient"><img class="icon" src="gradient/leo.svg" alt="सिंह (gradient)"></a>
         </div>
         <div class="meta"><div class="name">सिंह</div><div class="letters">(म, ट)</div></div>
       </li>
 
+      <!-- Virgo / कन्या -->
       <li class="card">
         <div class="icon-wrap">
-          <svg class="icon icon--simple" viewBox="0 0 100 100" aria-hidden="true"><use href="#rashi-kanya"/></svg>
-          <svg class="icon icon--grad" viewBox="0 0 100 100" aria-hidden="true"><use href="#grad-virgo"/></svg>
+          <a href="clean/virgo.svg" target="_blank" aria-label="कन्या clean"><img class="icon" src="clean/virgo.svg" alt="कन्या (clean)"></a>
+          <a href="gradient/virgo.svg" target="_blank" aria-label="कन्या gradient"><img class="icon" src="gradient/virgo.svg" alt="कन्या (gradient)"></a>
         </div>
         <div class="meta"><div class="name">कन्या</div><div class="letters">(प, ठ, ण, ट)</div></div>
       </li>
 
+      <!-- Libra / तुला -->
       <li class="card">
         <div class="icon-wrap">
-          <svg class="icon icon--simple" viewBox="0 0 100 100" aria-hidden="true"><use href="#rashi-tula"/></svg>
-          <svg class="icon icon--grad" viewBox="0 0 100 100" aria-hidden="true"><use href="#grad-libra"/></svg>
+          <a href="clean/libra.svg" target="_blank" aria-label="तुला clean"><img class="icon" src="clean/libra.svg" alt="तुला (clean)"></a>
+          <a href="gradient/libra.svg" target="_blank" aria-label="तुला gradient"><img class="icon" src="gradient/libra.svg" alt="तुला (gradient)"></a>
         </div>
         <div class="meta"><div class="name">तुला</div><div class="letters">(र, त)</div></div>
       </li>
 
+      <!-- Scorpio / वृश्चिक -->
       <li class="card">
         <div class="icon-wrap">
-          <svg class="icon icon--simple" viewBox="0 0 100 100" aria-hidden="true"><use href="#rashi-vrishchik"/></svg>
-          <svg class="icon icon--grad" viewBox="0 0 100 100" aria-hidden="true"><use href="#grad-scorpio"/></svg>
+          <a href="clean/scorpio.svg" target="_blank" aria-label="वृश्चिक clean"><img class="icon" src="clean/scorpio.svg" alt="वृश्चिक (clean)"></a>
+          <a href="gradient/scorpio.svg" target="_blank" aria-label="वृश्चिक gradient"><img class="icon" src="gradient/scorpio.svg" alt="वृश्चिक (gradient)"></a>
         </div>
         <div class="meta"><div class="name">वृश्चिक</div><div class="letters">(न, य)</div></div>
       </li>
 
+      <!-- Sagittarius / धनु -->
       <li class="card">
         <div class="icon-wrap">
-          <svg class="icon icon--simple" viewBox="0 0 100 100" aria-hidden="true"><use href="#rashi-dhanu"/></svg>
-          <svg class="icon icon--grad" viewBox="0 0 100 100" aria-hidden="true"><use href="#grad-sagittarius"/></svg>
+          <a href="clean/sagittarius.svg" target="_blank" aria-label="धनु clean"><img class="icon" src="clean/sagittarius.svg" alt="धनु (clean)"></a>
+          <a href="gradient/sagittarius.svg" target="_blank" aria-label="धनु gradient"><img class="icon" src="gradient/sagittarius.svg" alt="धनु (gradient)"></a>
         </div>
         <div class="meta"><div class="name">धनु</div><div class="letters">(ये, ध, फ, भ)</div></div>
       </li>
 
+      <!-- Capricorn / मकर -->
       <li class="card">
         <div class="icon-wrap">
-          <svg class="icon icon--simple" viewBox="0 0 100 100" aria-hidden="true"><use href="#rashi-makar"/></svg>
-          <svg class="icon icon--grad" viewBox="0 0 100 100" aria-hidden="true"><use href="#grad-capricorn"/></svg>
+          <a href="clean/capricorn.svg" target="_blank" aria-label="मकर clean"><img class="icon" src="clean/capricorn.svg" alt="मकर (clean)"></a>
+          <a href="gradient/capricorn.svg" target="_blank" aria-label="मकर gradient"><img class="icon" src="gradient/capricorn.svg" alt="मकर (gradient)"></a>
         </div>
         <div class="meta"><div class="name">मकर</div><div class="letters">(भो, ज, ख, ग)</div></div>
       </li>
 
+      <!-- Aquarius / कुंभ -->
       <li class="card">
         <div class="icon-wrap">
-          <svg class="icon icon--simple" viewBox="0 0 100 100" aria-hidden="true"><use href="#rashi-kumbh"/></svg>
-          <svg class="icon icon--grad" viewBox="0 0 100 100" aria-hidden="true"><use href="#grad-aquarius"/></svg>
+          <a href="clean/aquarius.svg" target="_blank" aria-label="कुंभ clean"><img class="icon" src="clean/aquarius.svg" alt="कुंभ (clean)"></a>
+          <a href="gradient/aquarius.svg" target="_blank" aria-label="कुंभ gradient"><img class="icon" src="gradient/aquarius.svg" alt="कुंभ (gradient)"></a>
         </div>
         <div class="meta"><div class="name">कुंभ</div><div class="letters">(गु, स, श, ष, द)</div></div>
       </li>
 
+      <!-- Pisces / मीन -->
       <li class="card">
         <div class="icon-wrap">
-          <svg class="icon icon--simple" viewBox="0 0 100 100" aria-hidden="true"><use href="#rashi-meen"/></svg>
-          <svg class="icon icon--grad" viewBox="0 0 100 100" aria-hidden="true"><use href="#grad-pisces"/></svg>
+          <a href="clean/pisces.svg" target="_blank" aria-label="मीन clean"><img class="icon" src="clean/pisces.svg" alt="मीन (clean)"></a>
+          <a href="gradient/pisces.svg" target="_blank" aria-label="मीन gradient"><img class="icon" src="gradient/pisces.svg" alt="मीन (gradient)"></a>
         </div>
         <div class="meta"><div class="name">मीन</div><div class="letters">(दि, चा, झ, थ)</div></div>
       </li>
 
     </ul>
 
-    <p style="margin-top:22px;color:#666;font-size:13px">Source icons: simple symbols + gradient stroke symbols. SCSS source in <code>assets/_icons.scss</code>.</p>
+    <p style="margin-top:22px;color:#666;font-size:13px">All SVG files placed in <code>clean/</code> and <code>gradient/</code> folders. Open any SVG to see the full standalone file.</p>
   </main>
-
 </body>
 </html>
